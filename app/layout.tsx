@@ -17,7 +17,7 @@ const inter = Inter({
 const options = {
   title: "Ben McClusky | Machine Learning Engineer",
   description:
-    "Ben McClusky is a Machine Learning Engineer and Technical Writer who is passionate about building solutions and contributing to open source communities",
+    "Chemical Engineer turned Machine Learning Engineer. Currently researching Distributed Multi-Agent Reinforcement Learning at Imperial College London. Former Special Projects at Hypergrowth Startup",
   url: "https://benmcclusky.com",
   ogImage:
     "https://res.cloudinary.com/benmcclusky/image/upload/v1692635746/benmcclusky/og.png",

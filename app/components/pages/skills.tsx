@@ -123,6 +123,11 @@ const expertiseLinks: Skill[] = [
     name: "Natural Language Processing",
     status: "expertise",
   },
+  {
+    id: 5,
+    name: "Web Scraping",
+    status: "expertise",
+  },
 ];
 
 // coreSkillsLinks without icons
