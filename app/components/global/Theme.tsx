@@ -13,7 +13,7 @@ export default function Theme() {
     if (theme !== "light" && theme !== "dark") {
       setTheme("dark");
     }
-  }, [theme]);
+  }, [theme, setTheme]);
 
   function toggleTheme() {
     setTheme(theme === "light" ? "dark" : "light");

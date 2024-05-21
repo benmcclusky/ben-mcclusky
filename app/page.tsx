@@ -45,9 +45,12 @@ export default async function Home() {
               </Slide>
             </div>
           ))}
-        <Slide delay={0.14}>
-          <HeroSvg />
-        </Slide>
+        {/* HeroSvg for larger screens */}
+        <div className="hidden lg:block">
+          <Slide delay={0.14}>
+            <HeroSvg />
+          </Slide>
+        </div>
       </section>
 
       <Slide delay={0.2}>
