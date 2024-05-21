@@ -1,6 +1,6 @@
 <div align="center">
 <h1>benmcclusky.com</h1>
-<p>Personal portfolio website adapted to be specific for Machine Learning Engineer from the template provided by <a href="https://github.com/Evavic44/victoreke.com">https://github.com/Evavic44/victoreke.com</a></p>
+<p>Personal portfolio website adapted to be specific for Machine Learning Engineer from this <a href="https://github.com/Evavic44/victoreke.com">template</a></p>
 </div>
 
 # Tech Stack
