@@ -12,7 +12,7 @@ export default function HeroSvg() {
             <animate
               attributeName="stop-color"
               values="#27b173;#1a663f;#26312d;#27b173"
-              dur="6s"
+              dur="12s"
               repeatCount="indefinite"
             />
           </stop>
@@ -20,7 +20,7 @@ export default function HeroSvg() {
             <animate
               attributeName="stop-color"
               values="#1a663f;#26312d;#27b173;#1a663f"
-              dur="6s"
+              dur="12s"
               repeatCount="indefinite"
             />
           </stop>
@@ -130,16 +130,19 @@ export default function HeroSvg() {
           .connection {
             stroke-dasharray: 1000;
             stroke-dashoffset: 1000;
-            animation: dash 4s linear infinite;
+            animation: dash 8s linear infinite;
           }
           .layer-1 {
             animation-delay: 0s;
           }
           .layer-2 {
-            animation-delay: 1s;
+            animation-delay: 2s;
           }
           .layer-3 {
-            animation-delay: 2s;
+            animation-delay: 4s;
+          }
+          .layer-4 {
+            animation-delay: 6s;
           }
           @keyframes dash {
             0% {

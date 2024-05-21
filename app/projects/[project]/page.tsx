@@ -68,7 +68,7 @@ export default async function Project({ params }: Props) {
                   : "cursor-pointer hover:border-zinc-700"
               }`}
             >
-              {project.projectUrl ? "Explore" : "Coming Soon"}
+              {project.projectUrl ? "Explore" : "Proprietary"}
             </a>
           </div>
 

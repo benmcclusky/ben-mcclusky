@@ -57,14 +57,14 @@ export default async function Home() {
           <Job />
         </div>
 
-        <div id="skills" className="mt-24">
+        <div id="skills" className="mt-40">
           {" "}
           {/* Increased margin to 24 */}
           <Skills />
         </div>
       </Slide>
 
-      <div id="projects" className="mt-24">
+      <div id="projects" className="mt-40">
         {" "}
         {/* Increased margin to 24 */}
         <Projects />

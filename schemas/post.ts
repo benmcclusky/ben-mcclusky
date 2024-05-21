@@ -29,7 +29,7 @@ export default defineType({
       title: "Description",
       type: "text",
       description: "Summarize your article in 150 - 160 characters.",
-      rows: 4,
+      // rows: 4,
       validation: (Rule) => [
         Rule.required()
           .min(100)
@@ -59,13 +59,13 @@ export default defineType({
         hotspot: true,
         metadata: ["lqip"],
       },
-      fields: [
-        {
-          name: "alt",
-          title: "Alt",
-          type: "string",
-        },
-      ],
+      // fields: [
+      //   {
+      //     name: "alt",
+      //     title: "Alt",
+      //     type: "string",
+      //   },
+      // ],
     }),
     defineField({
       name: "featured",
@@ -73,33 +73,33 @@ export default defineType({
       type: "boolean",
       description: "Add this post to the list of featured posts",
     }),
-    defineField({
-      name: "tags",
-      title: "Post Tags",
-      type: "array",
-      description: "Add relevant tags that match with your post",
-      of: [{ type: "string" }],
-      validation: (rule) => rule.required(),
-    }),
-    defineField({
-      name: "author",
-      title: "Author",
-      type: "reference",
-      to: [{ type: Author.name }],
-      validation: (rule) => rule.required(),
-    }),
-    defineField({
-      name: "body",
-      title: "Post Body",
-      type: "blockContent",
-      description: "Write your post content here",
-    }),
-    defineField({
-      name: "isPublished",
-      title: "PUBLISH POST",
-      type: "boolean",
-      description: "Tick this if you will like to publish this post",
-    }),
+    // defineField({
+    //   name: "tags",
+    //   title: "Post Tags",
+    //   type: "array",
+    //   description: "Add relevant tags that match with your post",
+    //   of: [{ type: "string" }],
+    //   validation: (rule) => rule.required(),
+    // }),
+    // defineField({
+    //   name: "author",
+    //   title: "Author",
+    //   type: "reference",
+    //   to: [{ type: Author.name }],
+    //   validation: (rule) => rule.required(),
+    // }),
+    // defineField({
+    //   name: "body",
+    //   title: "Post Body",
+    //   type: "blockContent",
+    //   description: "Write your post content here",
+    // }),
+    // defineField({
+    //   name: "isPublished",
+    //   title: "PUBLISH POST",
+    //   type: "boolean",
+    //   description: "Tick this if you will like to publish this post",
+    // }),
   ],
   preview: {
     select: {

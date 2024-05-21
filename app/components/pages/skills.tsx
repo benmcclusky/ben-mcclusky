@@ -15,7 +15,7 @@ import {
 interface Skill {
   id: number;
   name: string;
-  icon?: React.ComponentType;
+  icon?: React.ComponentType<{ className?: string }>;
   status: string;
 }
 

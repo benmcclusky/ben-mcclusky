@@ -36,6 +36,10 @@ export default async function Projects() {
           <h2 className="font-incognito text-4xl mb-4 font-bold tracking-tight">
             Projects
           </h2>
+          <p className="text-lg text-zinc-600 dark:text-zinc-400">
+            Collection of some of my best projects, click on the project to find
+            out more.
+          </p>
         </div>
       </Slide>
 
