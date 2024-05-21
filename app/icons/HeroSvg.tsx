@@ -31,50 +31,54 @@ export default function HeroSvg() {
       </defs>
       <g>
         {/* Connections */}
-        {[...Array(6)].map((_, i) =>
-          [...Array(6)].map((_, j) => (
-            <line
-              key={`l1-${i}-${j}`}
-              x1="100"
-              y1={100 + i * 80}
-              x2="300"
-              y2={50 + j * 100}
-              stroke="url(#paint-linear)"
-              strokeWidth="2"
-              className="connection layer-1"
-            />
-          ))
-        )}
-
-        {[...Array(6)].map((_, i) =>
-          [...Array(6)].map((_, j) => (
-            <line
-              key={`l2-${i}-${j}`}
-              x1="300"
-              y1={50 + i * 100}
-              x2="500"
-              y2={50 + j * 100}
-              stroke="url(#paint-linear)"
-              strokeWidth="2"
-              className="connection layer-2"
-            />
-          ))
-        )}
-
-        {[...Array(6)].map((_, i) =>
-          [...Array(2)].map((_, j) => (
-            <line
-              key={`l3-${i}-${j}`}
-              x1="500"
-              y1={50 + i * 100}
-              x2="700"
-              y2={200 + j * 200}
-              stroke="url(#paint-linear)"
-              strokeWidth="2"
-              className="connection layer-3"
-            />
-          ))
-        )}
+        <g className="layer-1">
+          {[...Array(6)].map((_, i) =>
+            [...Array(6)].map((_, j) => (
+              <line
+                key={`l1-${i}-${j}`}
+                x1="100"
+                y1={100 + i * 80}
+                x2="300"
+                y2={50 + j * 100}
+                stroke="url(#paint-linear)"
+                strokeWidth="2"
+                className="connection"
+              />
+            ))
+          )}
+        </g>
+        <g className="layer-2">
+          {[...Array(6)].map((_, i) =>
+            [...Array(6)].map((_, j) => (
+              <line
+                key={`l2-${i}-${j}`}
+                x1="300"
+                y1={50 + i * 100}
+                x2="500"
+                y2={50 + j * 100}
+                stroke="url(#paint-linear)"
+                strokeWidth="2"
+                className="connection"
+              />
+            ))
+          )}
+        </g>
+        <g className="layer-3">
+          {[...Array(6)].map((_, i) =>
+            [...Array(2)].map((_, j) => (
+              <line
+                key={`l3-${i}-${j}`}
+                x1="500"
+                y1={50 + i * 100}
+                x2="700"
+                y2={200 + j * 200}
+                stroke="url(#paint-linear)"
+                strokeWidth="2"
+                className="connection"
+              />
+            ))
+          )}
+        </g>
       </g>
       <g>
         {/* Input Layer */}
@@ -130,30 +134,108 @@ export default function HeroSvg() {
           .connection {
             stroke-dasharray: 1000;
             stroke-dashoffset: 1000;
-            animation: dash 8s linear infinite;
           }
-          .layer-1 {
-            animation-delay: 0s;
-          }
-          .layer-2 {
-            animation-delay: 2s;
-          }
-          .layer-3 {
-            animation-delay: 4s;
-          }
-          .layer-4 {
-            animation-delay: 6s;
-          }
-          @keyframes dash {
+
+          @keyframes dash-layer-1 {
             0% {
               stroke-dashoffset: 1000;
+            }
+            12.5% {
+              stroke-dashoffset: 0;
+            }
+            25% {
+              stroke-dashoffset: 0;
+            }
+            37.5% {
+              stroke-dashoffset: 0;
             }
             50% {
               stroke-dashoffset: 0;
             }
-            100% {
+            62.5% {
               stroke-dashoffset: 0;
             }
+            75% {
+              stroke-dashoffset: 0;
+            }
+            87.5% {
+              stroke-dashoffset: 1000;
+            }
+            100% {
+              stroke-dashoffset: 1000;
+            }
+          }
+
+          @keyframes dash-layer-2 {
+            0% {
+              stroke-dashoffset: 1000;
+            }
+            12.5% {
+              stroke-dashoffset: 1000;
+            }
+            25% {
+              stroke-dashoffset: 0;
+            }
+            37.5% {
+              stroke-dashoffset: 0;
+            }
+            50% {
+              stroke-dashoffset: 0;
+            }
+            62.5% {
+              stroke-dashoffset: 0;
+            }
+            75% {
+              stroke-dashoffset: 1000;
+            }
+            87.5% {
+              stroke-dashoffset: 1000;
+            }
+            100% {
+              stroke-dashoffset: 1000;
+            }
+          }
+
+          @keyframes dash-layer-3 {
+            0% {
+              stroke-dashoffset: 1000;
+            }
+            12.5% {
+              stroke-dashoffset: 1000;
+            }
+            25% {
+              stroke-dashoffset: 1000;
+            }
+            37.5% {
+              stroke-dashoffset: 0;
+            }
+            50% {
+              stroke-dashoffset: 0;
+            }
+            62.5% {
+              stroke-dashoffset: 1000;
+            }
+            75% {
+              stroke-dashoffset: 1000;
+            }
+            87.5% {
+              stroke-dashoffset: 1000;
+            }
+            100% {
+              stroke-dashoffset: 1000;
+            }
+          }
+
+          .layer-1 .connection {
+            animation: dash-layer-1 16s linear infinite;
+          }
+
+          .layer-2 .connection {
+            animation: dash-layer-2 16s linear infinite;
+          }
+
+          .layer-3 .connection {
+            animation: dash-layer-3 16s linear infinite;
           }
         `}
       </style>
