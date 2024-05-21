@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Theme from "./Theme";
 import UnmountStudio from "./Unmount";
-import MobileMenu from "./MobileMenu";
 
 export default function Navbar() {
   const data = [
@@ -44,7 +43,6 @@ export default function Navbar() {
 
           <div className="flex items-center gap-x-4">
             <Theme />
-            <MobileMenu />
           </div>
         </div>
       </header>
