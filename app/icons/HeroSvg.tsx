@@ -141,7 +141,7 @@ export default function HeroSvg() {
               stroke-dashoffset: 1000;
             }
             12.5% {
-              stroke-dashoffset: 0;
+              stroke-dashoffset: 1000;
             }
             25% {
               stroke-dashoffset: 0;
@@ -174,7 +174,7 @@ export default function HeroSvg() {
               stroke-dashoffset: 1000;
             }
             25% {
-              stroke-dashoffset: 0;
+              stroke-dashoffset: 1000;
             }
             37.5% {
               stroke-dashoffset: 0;
@@ -207,7 +207,7 @@ export default function HeroSvg() {
               stroke-dashoffset: 1000;
             }
             37.5% {
-              stroke-dashoffset: 0;
+              stroke-dashoffset: 1000;
             }
             50% {
               stroke-dashoffset: 0;
@@ -227,15 +227,15 @@ export default function HeroSvg() {
           }
 
           .layer-1 .connection {
-            animation: dash-layer-1 16s linear infinite;
+            animation: dash-layer-1 12s linear infinite;
           }
 
           .layer-2 .connection {
-            animation: dash-layer-2 16s linear infinite;
+            animation: dash-layer-2 12s linear infinite;
           }
 
           .layer-3 .connection {
-            animation: dash-layer-3 16s linear infinite;
+            animation: dash-layer-3 12s linear infinite;
           }
         `}
       </style>
