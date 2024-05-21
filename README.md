@@ -7,7 +7,8 @@
 
 # Tech Stack
 
-- [NextJS][nextjs] - UI framework
-- [Vercel][vercel] - Hosting and Deployment
-- [Sanity.io][sanity]: Headless CMS and Content Lake
-- [TailwindCSS][tailwind] / CSS - Styling and UI
+- [NextJS](https://nextjs.org) - UI framework
+- [Vercel](https://vercel.com) - Hosting and Deployment
+- [Sanity.io](https://www.sanity.io) - Headless CMS and Content Lake
+- [TailwindCSS](https://tailwindcss.com) / CSS - Styling and UI
+
